@@ -1,0 +1,6 @@
+email:subject:<from,from,from>:message
+email:subject:<from,from,from>:message
+ago:oggetto:<andrea,aldo>:testo
+email:oggetto:<andarea,aldo>:testo
+mail:oggetto:<andrea,aldo>:testo
+maill:oggetto:<andrea,aldo>:testo

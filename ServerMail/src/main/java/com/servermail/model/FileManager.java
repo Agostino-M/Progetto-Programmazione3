@@ -1,4 +1,4 @@
-﻿package com.servermail.model;
+package com.servermail.model;
 
 import com.servermail.comunication.Email;
 
@@ -9,8 +9,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class FileManager {
-    private static final String usersFilePath = "../../files/users.txt";
-    private static final String usersDirPath = "../../files/";
+    private static final String usersFilePath = "src/main/java/com/servermail/files/users.txt";
+    private static final String usersDirPath = "src/main/java/com/servermail/files/";
 
     public FileManager() {
     }
@@ -54,12 +54,12 @@ public class FileManager {
     }
 
     public static ArrayList<Email> extractMessages(String email) throws Exception {
-        File userDirectory = new File(usersDirPath + email);
+//        File userDirectory = new File(usersDirPath + email);
         String line = "";
         ArrayList<Email> userEmails = new ArrayList<>();
 
-        if (!userDirectory.exists() && userDirectory.isDirectory())
-            throw new Exception();
+//        if (!userDirectory.exists() || !userDirectory.isDirectory())
+//            throw new Exception();
 
         File userMessage = new File(usersDirPath + email + "/inbox.txt");
         if (!userMessage.exists())
