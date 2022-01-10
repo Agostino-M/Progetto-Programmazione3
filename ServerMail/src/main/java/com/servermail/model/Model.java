@@ -1,4 +1,6 @@
-package com.example.model;
+package com.servermail.model;
+
+import com.servermail.model.Account;
 
 import java.util.ArrayList;
 import java.util.HashMap;

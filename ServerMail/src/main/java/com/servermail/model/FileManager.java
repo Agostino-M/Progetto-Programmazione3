@@ -1,6 +1,6 @@
-﻿package com.example.model;
+﻿package com.servermail.model;
 
-import com.example.comunication.Email;
+import com.servermail.comunication.Email;
 
 import java.io.*;
 import java.nio.file.Files;

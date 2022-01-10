@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #424242 #424242;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.servermail.Main">
+   <children>
+      <ListView layoutY="65.0" prefHeight="335.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="65.0" />
+      <Label alignment="CENTER" layoutX="241.0" layoutY="14.0" minWidth="60.0" prefHeight="42.0" prefWidth="118.0" style="&#10;" text="ClientMail" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+         <font>
+            <Font name="System Bold" size="18.0" fx:id="x1" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="37.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/logo.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="65.0">
+         <children>
+            <ImageView fitHeight="130.0" fitWidth="180.0" layoutX="54.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="145.0" AnchorPane.leftAnchor="54.0" AnchorPane.rightAnchor="440.95999908447266" AnchorPane.topAnchor="60.0">
+               <image>
+                  <Image url="@../../../../../../../ServerMail/src/main/resources/com/example/servermail/user.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="460.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Agostino">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="130.0" fitWidth="180.0" layoutX="247.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="145.0" AnchorPane.leftAnchor="247.0" AnchorPane.rightAnchor="247.95999908447266" AnchorPane.topAnchor="60.0">
+               <image>
+                  <Image url="@../../../../../../../ServerMail/src/main/resources/com/example/servermail/user.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="89.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aldo">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="130.0" fitWidth="180.0" layoutX="442.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="145.0" AnchorPane.leftAnchor="440.5" AnchorPane.rightAnchor="54.0" AnchorPane.topAnchor="60.0">
+               <image>
+                  <Image url="@../../../../../../../ServerMail/src/main/resources/com/example/servermail/user.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="271.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Andrea">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
