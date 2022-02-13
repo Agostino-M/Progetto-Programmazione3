@@ -18,4 +18,4 @@
 24:agostino@mail.com:Re\: Ciao, benvenuto:[andrea@mail.com]:Ciao a te\n\nAM:12/02/2022, 12\:12
 25:aldo@mail.com:Re\: Fwd\: Re\: Re\: Ciao, benvenuto:[agostino@mail.com,  andrea@mail.com]::12/02/2022, 10\:32
 26:andrea@mail.com:Re\: Re\: Fwd\: Re\: Re\: Ciao, benvenuto:[aldo@mail.com,  agostino@mail.com,   andrea@mail.com]:Ciao a voi amici:12/02/2022, 10\:32
-27:agostino@mail.com:Giove:[andrea@mail.com]:Marte:20\:53
+27:agostino@mail.com:Giove:[andrea@mail.com]:Marte:13/02/2022, 20\:53
