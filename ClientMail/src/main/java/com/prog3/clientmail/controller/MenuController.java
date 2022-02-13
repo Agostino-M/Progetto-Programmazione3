@@ -15,6 +15,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.SocketException;
+import java.text.SimpleDateFormat;
 
 public class MenuController {
     @FXML
@@ -47,15 +48,16 @@ public class MenuController {
                 root.setCenter(reader);
         });
 
-        listView.setCellFactory(mailListView -> new ListCell<Email>() {
+        listView.setCellFactory(mailListView -> new ListCell<>() {
             @Override
             public void updateItem(Email email, boolean empty) {
                 super.updateItem(email, empty);
+                SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy");
 
                 if (empty) {
                     setText(null);
                 } else {
-                    setText(email.getSender() + "\n" + email.getSubject());
+                    setText(format.format(email.getDate()) + "\n" + email.getSender() + "\n" + email.getSubject());
                 }
             }
         });
