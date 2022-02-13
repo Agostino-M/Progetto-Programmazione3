@@ -20,7 +20,6 @@ public class Connection implements Runnable {
     private ObjectInputStream inputStream;
     private PrintWriter out;
 
-
     public Connection(ServerModel serverModel, Socket socket) {
         this.serverModel = serverModel;
         this.usersConnected = serverModel.getUsersConnected();
@@ -33,7 +32,6 @@ public class Connection implements Runnable {
             e.printStackTrace();
         }
     }
-
 
     @Override
     public void run() {
@@ -72,7 +70,8 @@ public class Connection implements Runnable {
 
     /**
      * Operation choice by the client (remove mail, send mail, reload mail, number of email and logout)
-     * @param in bufferedReader sent from the server itself
+     *
+     * @param in        bufferedReader sent from the server itself
      * @param operation operation choose by the client
      * @throws IOException
      */
@@ -151,7 +150,8 @@ public class Connection implements Runnable {
     }
 
     /**
-     *  Check of the connection
+     * Check of the connection
+     *
      * @return
      */
     public boolean alreadyConnected() {

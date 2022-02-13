@@ -1,6 +1,5 @@
 package com.prog3.servermail.model;
 
-
 import com.prog3.common.Email;
 import com.prog3.servermail.exception.UserException;
 
@@ -17,6 +16,7 @@ public class FileManager {
 
     /**
      * Return first ID Available in the list in the inbox
+     *
      * @param email
      * @return
      * @throws UserException
@@ -40,6 +40,7 @@ public class FileManager {
 
     /**
      * Return the number of email in the inbox
+     *
      * @param email
      * @return
      * @throws UserException
@@ -61,6 +62,7 @@ public class FileManager {
 
     /**
      * Return an Arraylist of the User's Emails
+     *
      * @param email
      * @return
      * @throws UserException
@@ -113,6 +115,7 @@ public class FileManager {
 
     /**
      * Send the new email send by the User
+     *
      * @param email
      * @return
      * @throws IOException
@@ -134,6 +137,7 @@ public class FileManager {
 
     /**
      * Take the email and adds it to the inbox
+     *
      * @param email
      * @param username
      * @throws IOException
@@ -157,6 +161,7 @@ public class FileManager {
 
     /**
      * Remove the request email from the inbox
+     *
      * @param id
      * @param username
      * @return
