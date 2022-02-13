@@ -31,7 +31,9 @@ public class ServerController {
 
         this.setClientConnection();
     }
-
+    /**
+     * Create the connections between server and users
+     */
     private void setClientConnection() {
         executor = Executors.newFixedThreadPool(NUM_THREADS);
         new Thread(() -> {

@@ -16,7 +16,11 @@ public class FileManager {
     private static final String usersDirPath = "src/main/files/";
 
     /**
-     * @return ID
+     * Return first ID Available in the list in the inbox
+     * @param email
+     * @return
+     * @throws UserException
+     * @throws IOException
      */
     public synchronized static int firstAvailableId(String email) throws UserException, IOException {
         File userMessage = new File(usersDirPath + email + "/inbox.txt");
@@ -35,7 +39,11 @@ public class FileManager {
     }
 
     /**
+     * Return the number of email in the inbox
+     * @param email
      * @return
+     * @throws UserException
+     * @throws IOException
      */
     public synchronized static int numberOfMails(String email) throws UserException, IOException {
         File userMessage = new File(usersDirPath + email + "/inbox.txt");
@@ -52,10 +60,11 @@ public class FileManager {
     }
 
     /**
+     * Return an Arraylist of the User's Emails
      * @param email
      * @return
-     * @throws Exception
      * @throws UserException
+     * @throws IOException
      */
     public synchronized static ArrayList<Email> extractMessages(String email) throws UserException, IOException {
         ArrayList<Email> userEmails = new ArrayList<>();
@@ -102,6 +111,12 @@ public class FileManager {
         return userEmails;
     }
 
+    /**
+     * Send the new email send by the User
+     * @param email
+     * @return
+     * @throws IOException
+     */
     public synchronized static boolean sendNewMessage(Email email) throws IOException {
         for (String receiver : email.getReceivers()) {
             receiver = receiver.trim();
@@ -117,6 +132,13 @@ public class FileManager {
         return true;
     }
 
+    /**
+     * Take the email and adds it to the inbox
+     * @param email
+     * @param username
+     * @throws IOException
+     * @throws UserException
+     */
     private synchronized static void createMessage(Email email, String username) throws IOException, UserException {
         File userMessage = new File(usersDirPath + username + "/inbox.txt");
 
@@ -134,8 +156,7 @@ public class FileManager {
     }
 
     /**
-     * Remove a message
-     *
+     * Remove the request email from the inbox
      * @param id
      * @param username
      * @return
@@ -163,6 +184,7 @@ public class FileManager {
 
         writer.close();
         reader.close();
+
         return tempFile.renameTo(userMessage);
     }
 }

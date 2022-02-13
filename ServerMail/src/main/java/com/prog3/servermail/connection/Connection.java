@@ -34,6 +34,7 @@ public class Connection implements Runnable {
         }
     }
 
+
     @Override
     public void run() {
         BufferedReader in;
@@ -70,11 +71,10 @@ public class Connection implements Runnable {
     }
 
     /**
-     * In questo metodo effettuo l'operazione correlata alla scelta ce ha
-     * effettuato il client.
-     *
-     * @param in        il bufferedReader passatogli dal server stesso
-     * @param operation operazione scelta dal client
+     * Operation choice by the client (remove mail, send mail, reload mail, number of email and logout)
+     * @param in bufferedReader sent from the server itself
+     * @param operation operation choose by the client
+     * @throws IOException
      */
     public void clientChoise(BufferedReader in, String operation) throws IOException {
         switch (operation) {
@@ -120,9 +120,7 @@ public class Connection implements Runnable {
     }
 
     /**
-     * Primo caricamento dei dati. Qui il server esegue una lettura del file inbox
-     * all'interno della cartella riferita all'utente che ha stabilito la
-     * connessione ed estrae, tutti i contenuti che invierà al client.
+     * First load of dates. The server make a read of the User's inbox and extract all messagges that will be send to the User
      */
     public void getMailList() {
         try {
@@ -140,7 +138,7 @@ public class Connection implements Runnable {
     }
 
     /**
-     * Ritorna il numero di mail
+     * Return the Numbers of mails
      */
     public void getNumberOfMails() {
         try {
@@ -153,18 +151,15 @@ public class Connection implements Runnable {
     }
 
     /**
-     * In questo metodo controllo se l'utente che ha stabilito la
-     * connessione lo aveva gia' fatto in passato durante il ciclo di vita
-     * del server.
+     *  Check of the connection
+     * @return
      */
     public boolean alreadyConnected() {
         return usersConnected.contains(username);
     }
 
     /**
-     * In questo metodo, al momento del logout da parte del client, rimuovo
-     * l'utente dalla lista degli utenti connessi durante il ciclo di vita
-     * del client.
+     * When the user make the logout, the user is removed from the list of users connected.
      */
     public void removeUser() {
         usersConnected.remove(username);
