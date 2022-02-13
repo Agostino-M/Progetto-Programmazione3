@@ -1,0 +1,21 @@
+2:aldo@aldo.it:Progetto basi:[rotella@torella.pol]:Ti ricordi basi?:08/06/2021, 11\:32
+3:aldo@aldo.it:Progetto prog3:[agomessina@poppo.com]:prof 3 quando?:14/02/2021, 12\:40
+6:agostino:Cazzone che non sei altro:[aldo@mail.com]:ti voglio bene:11/02/2022, 10\:32
+7:aldo:Mi odiate?:[aldo@mail.com]:Ciao ragazzi, Volevo chiedere maggiori informazioni sul vostro stato d'animo.Mica mi odiate?Attendo risposta.Cordiali saluti.Pippo Baudo Rambaldo.Matricola 123445:11/02/2022, 10\:32
+8:aldo:Oggetto:[aldo@mail.com]:Ciao asdasdasdasdasdasdasdasd:11/02/2022, 10\:32
+9:agostino:Ciao amico che fai:[aldo@mail.com]:Bello questo client mail:12/02/2022, 10\:32
+10:aldo:Oggetto:[aldo@mail.com]:Messaggio:12/02/2022, 10\:32
+11:agostino:oggetto:[aldo@mail.com]:ciao amico:12/02/2022, 10\:32
+12:andrea:Prova:[aldo@mail.com]::12/02/2022, 10\:32
+13:andrea:provasdasd:[aldo@mail.com,  aldo,  agostino]:Ciao amici miei <3<:12/02/2022, 20\:32
+15:andrea:Pollo:[aldo@mail.com, aldo]:Ciao:12/02/2022, 10\:32
+16:andrea:Plutone\: figo no?:[aldo@mail.com,  agostino]:Proprio un bel pianeta!\n\n\nAh vero gli a capo\n\nCS\nAT:12/02/2022, 10\:32
+17:aldo:pippo tanto:[aldo@mail.com, pippo]::12/02/2022, 10\:32
+19:agostino:Prova:[aldo@mail.com, aldo]:Messaggio\n\n\n\nAM:12/02/2022, 10\:52
+21:agostino:092355555555:[aldo, andrea, pippobaudo]:Ciao il mio numero sopra:12/02/2022, 10\:32
+22:agostino::[aldo, andrea]::12/02/2022, 10\:32
+23:agostino:Ciao\: :[aldo, andrea]:Polllo:12/02/2022, 10\:32
+24:agostino@mail.com:Re\: Ciao, benvenuto:[andrea@mail.com]:Ciao a te\n\nAM:12/02/2022, 12\:12
+25:aldo@mail.com:Re\: Fwd\: Re\: Re\: Ciao, benvenuto:[agostino@mail.com,  andrea@mail.com]::12/02/2022, 10\:32
+26:andrea@mail.com:Re\: Re\: Fwd\: Re\: Re\: Ciao, benvenuto:[aldo@mail.com,  agostino@mail.com,   andrea@mail.com]:Ciao a voi amici:12/02/2022, 10\:32
+27:agostino@mail.com:Giove:[andrea@mail.com]:Marte:Sat Feb 12 20:53:00 CET 2022

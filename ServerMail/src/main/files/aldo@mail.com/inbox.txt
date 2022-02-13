@@ -1,0 +1,27 @@
+1:admin:[ago, aldo]:oggetto:non so:20/10/2020, 10\:45
+3:andrea:oggetto:[ago, aldo]:non so:20/10/2021, 10\:45
+4:andrea:oggetto:[ago, aldo]:non so:10/10/2020, 10\:45
+5:aldo@aldo.it:Voto appello BASI:[rotella@torella.pol]:Ho preso 30 oooooooo:22/04/2021, 10\:45
+6:andrea:oggetto molto bello:[aldo]:Messaggio molto lungo:11/02/2022, 10\:45
+7:andrea:Ciao amici:[aldo, andrea]:Ciao amichi belli:11/02/2022, 10\:45
+8:agostino:Che fai:[aldo]:Ciao amico:11/02/2022, 10\:45
+9:andrea:asdasd:[aldo]:asdasd:12/02/2022, 10\:45
+10:andrea:Re\: Oggetto:[aldo, agostino]:Ciao, scusa per l'offesa:12/02/2022, 10\:45
+11:andrea:provasdasd:[andrea, aldo, agostino]:Ciao amici miei <3<:12/02/2022, 10\:45
+12:andrea:Re\: oggetto poiasd:[andrea, agostino, aldo]:asdasdasd:12/02/2022, 10\:45
+10:andrea:Pollo:[andrea, aldo]:Ciao:12/02/2022, 10\:45
+14:agostino:Prova:[andrea, aldo]:Messaggio\n\n\n\nAM:12/02/2022, 10\:45
+15:agostino:1233242134:[aldo, andrea]:Ciao:12/02/2022, 10\:45
+16:agostino:092355555555:[aldo, andrea, pippobaudo]:Ciao il mio numero sopra:12/02/2022, 10\:45
+17:agostino:12369702823120391209381:[aldo]:Ciao:12/02/2022, 10\:45
+18:agostino:prova:[aldo]::12/02/2022, 10\:45
+19:agostino:asd:[aldo]::12/02/2022, 10\:45
+20:agostino::[aldo]::12/02/2022, 10\:45
+21:andrea:Re\: Oggetto:[aldo]:Ciao:12/02/2022, 10\:45
+22:agostino::[aldo, andrea]::12/02/2022, 10\:45
+23:agostino:Ciao\: :[aldo, andrea]:Polllo:12/02/2022, 10\:45
+24:agostino::[agostino, aldo]::12/02/2022, 10\:45
+25:agostino@mail.com:Fwd\: Re\: Re\: Ciao, benvenuto:[aldo@mail.com]:No ciao anche a te !:12/02/2022, 10\:45
+26:andrea@mail.com:Re\: Re\: Fwd\: Re\: Re\: Ciao, benvenuto:[aldo@mail.com, agostino@mail.com, andrea@mail.com]:Ciao a voi amici:12/02/2022, 10\:45
+27:agostino@mail.com:Okspodjaosd:[aldo@mail.com]::12/02/2022, 20\:57
+28:agostino@mail.com:Ciao :[aldo@mail.com]::12/02/2022, 20\:58

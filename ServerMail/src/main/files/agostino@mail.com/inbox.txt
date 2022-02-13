@@ -1,0 +1,19 @@
+1:agomessina@poppo.com:Ciao, cazzone:[aldo@aldo.it,rambaldo@ramb.com,rotella@torella.pol]:Ciao ragazzi come va?:12/12/2021, 12\:30
+2:aldo@aldo.it:Voto appello BASI:[rotella@torella.pol]:Ho preso 30 oooooooo:22/04/2021, 12\:30
+3:rotella@torella.pol:ISEE 2023:[rotella@torella.pol]:Iseeeee:2/10/2021, 12\:30
+4:aldo@aldo.it:Progetto prog3:[agomessina@poppo.com]:prof 3 quando?:14/02/2021, 12\:30
+5:rotella@torella.pol:Richiesta orale posticipato:[liliana.ardissono@lol.coll]:prof mi potrebbe fare l'orale il giono 7? sto male:18/04/2021, 12\:30
+6:andrea:oggetto molto bello:[agostino]:Messaggio molto lungo:11/02/2022, 12\:30
+7:andrea:Re\: oggetto:[agostino,   aldo]:Messaggio di prova:12/02/2022, 12\:30
+8:andrea:Re\: oggetto:[agostino,   aldo]::12/02/2022, 12\:30
+9:andrea:provasdasd:[andrea,  aldo,  agostino]:Ciao amici miei <3<:12/02/2022, 12\:30
+10:andrea:Re\: oggetto poiasd:[andrea,  agostino,   aldo]:asdasdasd:12/02/2022, 12\:30
+11:andrea:Plutone\: figo no?:[andrea,  agostino]:Proprio un bel pianeta!\n\n\nAh vero gli a capo\n\nCS\nAT:12/02/2022, 12\:30
+12:aldo:Ciao amici:[andrea, agostino]::12/02/2022, 12\:30
+13:agostino::[agostino,  aldo]::12/02/2022, 12\:30
+14:andrea:Fwd\: oggetto:[agostino]:non so:12/02/2022, 12\:30
+15:andrea@mail.com:Ciao, benvenuto:[agostino@mail.com]:Benvenuto a Trapani.\n\nSaluti\nAT:12/02/2022, 12\:30
+16:andrea@mail.com:Re\: Re\: Ciao, benvenuto:[agostino@mail.com]:No ciao anche a te !:12/02/2022, 12\:30
+17:aldo@mail.com:Re\: Fwd\: Re\: Re\: Ciao, benvenuto:[agostino@mail.com,  andrea@mail.com]::12/02/2022, 12\:30
+18:andrea@mail.com:Re\: Re\: Fwd\: Re\: Re\: Ciao, benvenuto:[aldo@mail.com,  agostino@mail.com,   andrea@mail.com]:Ciao a voi amici:12/02/2022, 12\:30
+19:aldo@mail.com:Provaaaaasd:[agostino@mail.com]::12/02/2022, 20\:56
