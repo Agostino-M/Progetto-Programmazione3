@@ -37,6 +37,7 @@ public class MenuController {
 
     /**
      * Initializes the model
+     *
      * @param mailListModel
      */
     public void initModel(MailListModel mailListModel) {

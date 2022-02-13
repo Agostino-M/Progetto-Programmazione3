@@ -10,9 +10,6 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
 
 import java.text.SimpleDateFormat;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-import java.util.Date;
 import java.util.Objects;
 
 public class MailReaderController {
@@ -58,6 +55,7 @@ public class MailReaderController {
 
     /**
      * forward the selected email
+     *
      * @param mouseEvent
      */
     @FXML
@@ -106,6 +104,7 @@ public class MailReaderController {
 
     /**
      * Initialize the Model
+     *
      * @param model
      */
     public void initModel(MailListModel model) {

@@ -10,8 +10,6 @@ import javafx.scene.input.MouseEvent;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
@@ -47,6 +45,7 @@ public class MailWriterController {
 
     /**
      * Check if the email format or the receiver's email is correct
+     *
      * @return boolean
      */
 
@@ -73,6 +72,7 @@ public class MailWriterController {
 
     /**
      * Send the mail to the server and make appear an alert
+     *
      * @param mouseEvent
      */
     public void sendMail(MouseEvent mouseEvent) {

@@ -2,19 +2,11 @@ package com.prog3.clientmail.connection;
 
 import com.prog3.clientmail.model.MailListModel;
 import com.prog3.common.Email;
-import javafx.application.Platform;
-import javafx.scene.control.Alert;
 
 import java.io.*;
 import java.net.InetAddress;
 import java.net.Socket;
-import java.net.SocketException;
-import java.net.UnknownHostException;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Date;
 
 public class Connection {
     private final int port;
@@ -42,6 +34,7 @@ public class Connection {
 
     /**
      * Create connection made by the client on port 8195. If not found, an error message will appear.
+     *
      * @throws IOException
      * @throws InterruptedException
      */
@@ -60,6 +53,7 @@ public class Connection {
      * First load of the data.
      * The user asks for the emails in his folder and waits to recieve them.
      * When the messages will arrive, they will be sorted and added
+     *
      * @return emails
      * @throws InterruptedException
      * @throws IOException
@@ -88,6 +82,7 @@ public class Connection {
 
     /**
      * The client asks for the new data. This function is executed when there are new emails.
+     *
      * @return emails
      * @throws IOException
      * @throws InterruptedException
@@ -114,6 +109,7 @@ public class Connection {
 
     /**
      * The User ask to eliminate an email from his list and send the ID to the server to make him delete it.
+     *
      * @param id
      */
     public synchronized void deleteMail(Integer id) {
@@ -145,6 +141,7 @@ public class Connection {
 
     /**
      * User ask to send an email and send the mail (string series)
+     *
      * @param mail
      * @return boolean
      */
@@ -166,6 +163,7 @@ public class Connection {
 
     /**
      * Server asks the number of mail in the User's folder.
+     *
      * @return the number of mails
      * @throws IOException
      * @throws InterruptedException
