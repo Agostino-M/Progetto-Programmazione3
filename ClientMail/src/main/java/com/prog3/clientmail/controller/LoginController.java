@@ -22,7 +22,10 @@ public class LoginController {
     private MailListModel mailListModel;
     private Stage stage;
 
-
+    /**
+     * Make the login of the selected user
+     * @param event
+     */
     @FXML
     private void login(MouseEvent event) {
         String username = ((ImageView) event.getSource()).getId();
@@ -64,6 +67,11 @@ public class LoginController {
         this.stage = stage;
     }
 
+    /**
+     * Create the graphic of the Client side
+     * @param stage
+     * @throws IOException
+     */
     public void setMainStage(Stage stage) throws IOException {
         BorderPane root = new BorderPane();
         FXMLLoader menuLoader = new FXMLLoader(Main.class.getResource("menu.fxml"));

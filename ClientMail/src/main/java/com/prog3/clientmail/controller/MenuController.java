@@ -35,6 +35,10 @@ public class MenuController {
         this.connection = connection;
     }
 
+    /**
+     * Initializes the model
+     * @param mailListModel
+     */
     public void initModel(MailListModel mailListModel) {
         if (this.mailListModel != null)
             throw new IllegalStateException("Model can only be initialized once");
@@ -137,6 +141,9 @@ public class MenuController {
         this.reader = reader;
     }
 
+    /**
+     * refresh the mail
+     */
     @FXML
     private void refresh() {
         try {
@@ -156,6 +163,9 @@ public class MenuController {
         }
     }
 
+    /**
+     * Show the new message model
+     */
     @FXML
     private void newMessage() {
         mailWriterController.setSubject("");

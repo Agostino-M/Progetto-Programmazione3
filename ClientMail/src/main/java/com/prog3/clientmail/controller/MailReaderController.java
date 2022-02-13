@@ -47,12 +47,19 @@ public class MailReaderController {
         this.writer = writer;
     }
 
+    /**
+     * delete email
+     */
     @FXML
     private void deleteEmail() {
         Integer id = mailListModel.getCurrentMail().getId();
         connection.deleteMail(id);
     }
 
+    /**
+     * forward the selected email
+     * @param mouseEvent
+     */
     @FXML
     public void forwardEmail(MouseEvent mouseEvent) {
         root.setCenter(writer);
@@ -63,6 +70,9 @@ public class MailReaderController {
         mailWriterController.setMessage(email.getMessage());
     }
 
+    /**
+     * replay the selected email
+     */
     @FXML
     private void replyEmail() {
         Email email = mailListModel.getCurrentMail();
@@ -73,6 +83,9 @@ public class MailReaderController {
         mailWriterController.setMessage("");
     }
 
+    /**
+     * Replay to all users the Email
+     */
     @FXML
     private void replyAllEmail() {
         root.setCenter(writer);
@@ -91,13 +104,17 @@ public class MailReaderController {
         mailWriterController.setMessage("");
     }
 
+    /**
+     * Initialize the Model
+     * @param model
+     */
     public void initModel(MailListModel model) {
         if (this.mailListModel != null) throw new IllegalStateException("Model can only be initialized once");
 
         this.mailListModel = model;
         model.currentMailProperty().addListener((observable, oldValue, newValue) -> {
             if (newValue == null) {
-                // Non esiste un nuovo valore, resetto tutto
+                // if the new value doesn't exit, it will reset
                 sender.setText("");
                 receiver.setText("");
                 subject.setText("");
@@ -106,7 +123,7 @@ public class MailReaderController {
             } else {
                 SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy, HH:mm");
 
-                // Modifico il testo delle label
+                // Change the text of the label
                 sender.setText(newValue.getSender());
                 receiver.setText(newValue.getReceivers().toString().replace("[", "").replace("]", ""));
                 subject.setText(newValue.getSubject());

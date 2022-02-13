@@ -31,6 +31,7 @@ public class Connection {
         this.mailListModel = mailListModel;
     }
 
+
     public void setUsername(String username) {
         this.username = username;
     }
@@ -40,8 +41,9 @@ public class Connection {
     }
 
     /**
-     * In questo metodo il client effettua la connessione al server sulla porta
-     * 8195. In caso non dovesse trovarlo fa apparire un messaggio di errore.
+     * Create connection made by the client on port 8195. If not found, an error message will appear.
+     * @throws IOException
+     * @throws InterruptedException
      */
     private synchronized void connect() throws IOException, InterruptedException {
         String nomeHost = InetAddress.getLocalHost().getHostName();
@@ -55,11 +57,12 @@ public class Connection {
     }
 
     /**
-     * In questo metodo il client effettua il primo caricamento dei dati.
-     * Innanzitutto si identifica, in modo tale che il server possa andare a
-     * recuperare le email nella cartella corretta, e successivamente si mette
-     * in attesa di ricevere i contenuti, che una volta arrivati verrano
-     * ordinati ed inseriti a tutti gli effetti.
+     * First load of the data.
+     * The user asks for the emails in his folder and waits to recieve them.
+     * When the messages will arrive, they will be sorted and added
+     * @return emails
+     * @throws InterruptedException
+     * @throws IOException
      */
     public synchronized ArrayList<Email> loadData() throws InterruptedException, IOException {
         ArrayList<Email> emails = new ArrayList<>();
@@ -84,8 +87,10 @@ public class Connection {
     }
 
     /**
-     * In questo metodo il client effettua nuovamente il caricamento dei dati.
-     * Esegue cio' quando vi sono nuove mail.
+     * The client asks for the new data. This function is executed when there are new emails.
+     * @return emails
+     * @throws IOException
+     * @throws InterruptedException
      */
     public synchronized ArrayList<Email> reloadData() throws IOException, InterruptedException {
         connect();
@@ -108,9 +113,8 @@ public class Connection {
     }
 
     /**
-     * In questo metodo il client elimina la mail desiderata dalla propria lista
-     * ed invia successivamente al server l'ID in modo tale che ench'esso possa
-     * eliminarla a tutti gli effetti.
+     * The User ask to eliminate an email from his list and send the ID to the server to make him delete it.
+     * @param id
      */
     public synchronized void deleteMail(Integer id) {
         try {
@@ -127,7 +131,7 @@ public class Connection {
     }
 
     /**
-     * In questo metodo il client comunica che vuole eseguire una disconnesione.
+     * The user ask to be logged out
      */
     public synchronized void closeConnection() {
         try {
@@ -140,11 +144,9 @@ public class Connection {
     }
 
     /**
-     * In questo metodo il client comunica al server che e' pronto ad inviare
-     * una mail e successivamente si prepara a mandargli una serie di stringhe
-     * che corrispondono ai contenuti di essa.
-     *
-     * @param mail la mail
+     * User ask to send an email and send the mail (string series)
+     * @param mail
+     * @return boolean
      */
     public synchronized boolean sendMail(Email mail) {
         Boolean result = false;
@@ -163,10 +165,10 @@ public class Connection {
     }
 
     /**
-     * In questo metodo il client chiede al server quante email vi sono nella
-     * cartella correlata all'utente.
-     *
-     * @return il numero di email sul server
+     * Server asks the number of mail in the User's folder.
+     * @return the number of mails
+     * @throws IOException
+     * @throws InterruptedException
      */
     public int getNumberOfMails() throws IOException, InterruptedException {
         connect();

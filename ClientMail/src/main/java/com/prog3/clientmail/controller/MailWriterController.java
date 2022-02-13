@@ -45,6 +45,11 @@ public class MailWriterController {
         this.stage = stage;
     }
 
+    /**
+     * Check if the email format or the receiver's email is correct
+     * @return boolean
+     */
+
     private boolean validFields() {
         String receiversText = receivers.getText();
         ArrayList<String> receiversSplit = new ArrayList<>(Arrays.asList(receiversText.split(",")));
@@ -66,6 +71,10 @@ public class MailWriterController {
         return true;
     }
 
+    /**
+     * Send the mail to the server and make appear an alert
+     * @param mouseEvent
+     */
     public void sendMail(MouseEvent mouseEvent) {
         if (!validFields()) {
             return;
@@ -101,6 +110,9 @@ public class MailWriterController {
         clearFields();
     }
 
+    /**
+     * clear fields in the mail
+     */
     private void clearFields() {
         this.receivers.setText("");
         this.subject.setText("");
