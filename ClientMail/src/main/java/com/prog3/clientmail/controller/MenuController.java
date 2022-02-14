@@ -122,7 +122,8 @@ public class MenuController {
                     } finally {
                         try {
                             Thread.sleep(20000);
-                        } catch (InterruptedException e) {
+                            mailListModel.loadData(connection.loadData());
+                        } catch (InterruptedException | IOException e) {
                             e.printStackTrace();
                         }
                     }
